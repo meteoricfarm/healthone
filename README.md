@@ -29,7 +29,7 @@
 3. 섭취 식단과 운동을 기록하고 칼로리 계산
 
 4. 유저 맞춤형 운동 프로그램 소개
-   
+
    - 많이 참여한, 유저들이 관심있어하는 운동 프로그램 소개
 
 5. 건강 데이터 백업 및 다운로드
@@ -175,102 +175,47 @@
 
 #### 로그인 및 간편가입 페이지
 
-<div align="left">
-<img src="./assets/healthone_login.jpg" width="252px" height="560px"/>
-<img src="./assets/healthone_join1.jpg" width="252px" height="560px"/>
-<img src="./assets/healthone_join2.jpg" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/login-register-img.jpg" width="768px"/>
 <br/>
 
 #### 메인 페이지
 
-<div align="left">
-<img src="./assets/healthone_main1.jpg" width="252px" height="560px"/>
-<img src="./assets/healthone_main2.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_slide_bar.jpg" width="252px" height="560px"/>
-</div>
-
-<br>
+<img src="./assets/main-img.jpg" width="768px"/>
+<br/>
 
 #### 걸음수 측정 페이지
 
-<div align="left">
-<img src="./assets/healthone_walk_main.png" width="252px" height="560px"/>
-<img src="./assets/healthone_walk_detail.png" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/walk-measure-img.jpg" width="512px"/>
 <br/>
 
 #### 심박수 측정 페이지
 
-<div align="left">
-<img src="./assets/healtone_heart_main1.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_heart_main1-focused.jpg" width="252px" height="560px"/>
-</div>
-
-<br/>
-
-<div align="left">
-<img src="./assets/healtone_heart_main2.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_heart_input.jpg" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/heart-measure-img.jpg" width="1024px"/>
 <br/>
 
 ### 식단 기록 페이지
 
-<div align="left">
-<img src="./assets/healtone_diet_main.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_health_diet_input1.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_health_diet_input2.jpg" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/diet-log-img1.jpg" width="768px" />
 <br/>
-
-<div align="left">
-<img src="./assets/healtone_health_diet_search.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_health_calendar_dialog.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_health_excercise_input.jpg" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/diet-log-img2.jpg" width="768px" />
 <br/>
 
 ### 건강 정보 페이지
 
-<div align="left">
-<img src="./assets/healtone_health_info.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_health_info2.jpg" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/health-info-img.jpg" width="512px" />
 <br/>
 
 ### 🔥 챌린지 페이지
 
-<div align="left">
-<img src="./assets/healtone_challenge_main1.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_challenge_main2.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone_challenge_detail_2.jpg" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/challenge-img1.jpg" width="768px" />
 <br/>
-
-<div align="left">
-<img src="./assets/healtone_challenge_detail_1.jpg" width="252px" height="560px"/>
-<img src="./assets/healtone-challenge_tool_modal.jpg" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/challenge-img2.jpg" width="512px" />
 <br/>
 
 ### 건강 데이터 다운로드 페이지
 
-<div align="left">
-<img src="./assets/healthone_data.png" width="252px" height="560px"/>
-</div>
-
+<img src="./assets/download-img.jpg" width="252px" height="560px"/>
 <br/>
-
-
 
 ### WEB
 
@@ -381,17 +326,17 @@ com
      ㄴ healthone
          ㄴ domain
          |   ㄴ user
-         |   |   ㄴ api 
-         |   |   ㄴ entity 
+         |   |   ㄴ api
+         |   |   ㄴ entity
          |   |   ㄴ service
          |   |   ㄴ dto
-         |   |   ㄴ repository        
+         |   |   ㄴ repository
          |   ㄴ walk
-         |   |   ㄴ api 
-         |   |   ㄴ entity 
+         |   |   ㄴ api
+         |   |   ㄴ entity
          |   |   ㄴ service
          |   |   ㄴ dto
-         |   |   ㄴ repository        
+         |   |   ㄴ repository
          |   ...
          ㄴ global
              ㄴ config
@@ -475,7 +420,7 @@ pipeline{
 
 **Back-End Pipeline Template**
 
-```
+````
 pipeline{
     agent{
         label 'healthone-back-jenkins'
@@ -571,7 +516,7 @@ pipeline{
         }
     }
 }
-```
+````
 
 ### Project Member - 이산가족
 
