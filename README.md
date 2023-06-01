@@ -1,7 +1,7 @@
 ## 헬스원(HealthOne) : 나를 위한 건강관리 매니저
 
 **안드로이드 어플리케이션 하나로 관리하는 건강관리 서비스**
-
+<img src="./assets/healthone-concept.jpg" />
 <br/>
 
 ## 📜 프로젝트 개요
