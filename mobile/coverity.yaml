@@ -1,0 +1,10 @@
+capture:
+  build:
+    build-command: ./gradlew build -x lint
+    clean-command: ./gradlew clean
+  compiler-configuration:
+    cov-configure:
+      - [--kotlin]
+  languages:
+    include:
+      - kotlin
