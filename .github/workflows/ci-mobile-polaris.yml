@@ -50,6 +50,6 @@ jobs:
           polaris_project_name: ${{ github.event.repository.name }}
           polaris_assessment_types: "SAST"
           project_directory: ./mobile
-          coverity_config_path: ./coverity.yaml
+          coverity_config_path: ./mobile/coverity.yaml
 
 
