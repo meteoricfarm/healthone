@@ -49,6 +49,6 @@ jobs:
           polaris_application_name: ${{ vars.APPLICATION_NAME }}
           polaris_project_name: ${{ github.event.repository.name }}
           polaris_assessment_types: "SCA,SAST"
-          coverity_config_path: coverity.yaml
+          coverity_config_path: mobile/coverity.yaml
 
 
