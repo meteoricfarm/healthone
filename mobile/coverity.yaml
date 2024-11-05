@@ -1,7 +1,7 @@
 capture:
   build:
-    build-command: ./gradlew build -x lint
-    clean-command: ./gradlew clean
+    build-command: ./mobile/gradlew -p mobile build -x lint
+    clean-command: ./mobile/gradlew -p mobile clean
   compiler-configuration:
     cov-configure:
       - [--kotlin]
