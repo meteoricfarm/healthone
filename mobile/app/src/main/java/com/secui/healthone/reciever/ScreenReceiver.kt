@@ -25,6 +25,7 @@ class ScreenReceiver : BroadcastReceiver() {
             // 스크린 ON
             Log.i("SCREEN", "스크린 켜짐 (ON) >> TIME : ${nowTime.toString()}")
             prefs.setString("wake_time", "${nowTime.toString()}")
+
             val result = saveUserSleepTime(PreferenceUtil(context));
             Log.i(LOG, "측정된 취침 시간 : $result");
 
@@ -38,8 +39,6 @@ class ScreenReceiver : BroadcastReceiver() {
                     endTime = result.endTime
                 );
             }
-//            val list = DBHelper(context).selectAll(context=context);
-//            Log.i(LOG, "${list.toString()}")
 
         } else if (intent?.action == Intent.ACTION_SCREEN_OFF) {
             // 스크린 OFF
