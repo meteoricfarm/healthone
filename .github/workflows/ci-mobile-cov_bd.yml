@@ -40,10 +40,9 @@ jobs:
         
       - name: Run Coverity Scan
         run: |
-          coverity scan -c coverity-localAnalysis.yaml \
+          coverity scan -c mobile/coverity-localAnalysis.yaml \
             -o commit.connect.stream="${{ vars.COV_STREAM_NAME }}" \
             -o commit.connect.url="${{ vars.COVERITY_URL }}"
-        working-directory: mobile
 
       - name: Run BlackDuck Scan
         run: |
