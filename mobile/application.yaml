@@ -1,0 +1,8 @@
+blackduck:
+  url: ""
+  api.token: ""
+  trust.cert: true
+detect:
+  project.name: ""
+  project.version.name: ""
+  blackduck.scan.mode: INTELLIGENT

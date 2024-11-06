@@ -1,0 +1,49 @@
+capture:
+  build-command-inference: true
+  emit-complementary-info: false
+  failure-threshold-percent: 0
+  force-dependency-resolution: false
+  minimal-classpath-emit: false
+  record-with-source: false
+  security-da: true
+  build:
+    aspnet-compiler: true
+    bazel: false
+    build-command: ./gradlew build -x lint
+    clean-command: ./gradlew clean
+    defer-decomp: false
+    instrument: false
+    scan-transparency: true
+  compiler-configuration:
+    cov-configure:
+      - [--kotlin]
+  languages:
+    include:
+      - kotlin
+
+analyze:
+  aggressiveness-level: low
+  c-cpp-fnptr: false
+  c-cpp-virtual: false
+  callgraph-metrics: false
+  constraint-fpp: false
+  location: local
+  mode: pfi
+  one-tu-per-psf: true
+  scan-transparency: true
+  checkers:
+    all: false
+    all-security: true
+    audit: false
+    brakeman: true
+    c-family-security: false
+    concurrency: false
+    default: true
+    pmd: true
+    rule: false
+    android-security: true
+
+commit:
+  connect:
+    stream: ""
+    url: ""
