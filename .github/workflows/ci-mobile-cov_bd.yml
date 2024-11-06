@@ -53,3 +53,4 @@ jobs:
             --detect.project.version.name="${{ github.ref_name }}" \
             --detect.blackduck.scan.mode="INTELLIGENT" \
         working-directory: mobile
+
