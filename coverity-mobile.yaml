@@ -9,8 +9,8 @@ capture:
   build:
     aspnet-compiler: true
     bazel: false
-    build-command: ./gradlew build -x lint
-    clean-command: ./gradlew clean
+    build-command: ./mobile/gradlew -p mobile build -x lint
+    clean-command: ./mobile/gradlew -p mobile clean
     defer-decomp: false
     instrument: false
     scan-transparency: true
