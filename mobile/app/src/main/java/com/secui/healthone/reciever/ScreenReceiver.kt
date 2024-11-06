@@ -29,7 +29,7 @@ class ScreenReceiver : BroadcastReceiver() {
             val result = saveUserSleepTime(PreferenceUtil(context));
             Log.i(LOG, "측정된 취침 시간 : $result");
 
-            if(result.recordSleepTime > 0){
+            if (result.recordSleepTime > 0) {
                 // DBHelper 리소스를 use 스코프 함수 내에서 사용
                 DBHelper(context).use { dbHelper ->
                     dbHelper.saveScore(

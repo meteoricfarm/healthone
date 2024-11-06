@@ -116,7 +116,7 @@ class DBHelper: SQLiteOpenHelper {
         dbHelper.writableDatabase.close()
         return recordTimeList
     }
-    fun saveScore(context: Context, recordSleepTime: Long, strartTime:String, endTime:String){
+    fun saveScore(context: Context, recordSleepTime: Long, startTime:String, endTime:String){
         // SQLite로 데이터를 삽입하는 코드
         // step 1. 데이터 베이스를 연다
         val dbHelper = DBHelper(context);
@@ -128,7 +128,7 @@ class DBHelper: SQLiteOpenHelper {
             (?, ?, ?)
         """.trimIndent()
         // step 3. 세팅될 값을 배열로 선언해준다
-        val values = arrayOf(recordSleepTime, strartTime, endTime);
+        val values = arrayOf(recordSleepTime, startTime, endTime);
         // step 4. DBHelper를 통해 쿼리문을 실행한다.
         dbHelper.writableDatabase.execSQL(sql, values); // sql문, 값(배열) 순이다.
         // step 5. DB 사용이 끝났다면 쿼리문을 닫아 준다.
