@@ -40,7 +40,7 @@ jobs:
         
       - name: Run Coverity Scan
         run: |
-          coverity scan -c mobile/coverity-localAnalysis.yaml \
+          coverity scan -c coverity-mobile.yaml \
             -o commit.connect.stream="${{ vars.COV_STREAM_NAME }}" \
             -o commit.connect.url="${{ vars.COVERITY_URL }}"
 
