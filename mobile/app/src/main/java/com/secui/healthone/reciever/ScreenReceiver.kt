@@ -30,14 +30,15 @@ class ScreenReceiver : BroadcastReceiver() {
             Log.i(LOG, "측정된 취침 시간 : $result");
 
             if(result.recordSleepTime > 0){
-                // selectAll
-                val dbHelper = DBHelper(context);
-                dbHelper.saveScore(
-                    context=context,
-                    recordSleepTime = result.recordSleepTime,
-                    strartTime = result.startTime,
-                    endTime = result.endTime
-                );
+                // DBHelper 리소스를 use 스코프 함수 내에서 사용
+                DBHelper(context).use { dbHelper ->
+                    dbHelper.saveScore(
+                        context = context,
+                        recordSleepTime = result.recordSleepTime,
+                        startTime = result.startTime,
+                        endTime = result.endTime
+                    )
+                }
             }
 
         } else if (intent?.action == Intent.ACTION_SCREEN_OFF) {
