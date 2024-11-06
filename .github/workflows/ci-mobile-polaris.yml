@@ -13,6 +13,8 @@ on:
   pull_request:
     branches: [ "main" ]
 
+  workflow_dispatch:
+
 jobs:
   polaris-scan:
     runs-on: ubuntu-latest
